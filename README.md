@@ -18,6 +18,7 @@ fork from [huruijin/Hlayer](https://github.com/huruji/Hlayer)
 ## 修改
 <p>加入了render方法，自定义渲染，接受 dom/html字符串/jquery</p>
 用法
+
 ```js
 hlayer.render({
     title: '自定义渲染内容窗体',
