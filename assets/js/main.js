@@ -331,7 +331,7 @@
     apiRender.onclick = function () {
         hlayer.render({
             title: '自定义渲染内容窗体',
-            content: ['<p>我是HTML字符串</p>','<p>我是HTML字符串</p>','<p>我是HTML字符串</p>','<p>我是HTML字符串</p>','<p>我是HTML字符串</p>','<p>我是HTML字符串</p>','<p>我是HTML字符串</p>','<p>我是HTML字符串</p>','<p>我是HTML字符串</p>','<p>我是HTML字符串</p>','<p>我是HTML字符串</p>','<p>我是HTML字符串</p>','<p>我是HTML字符串</p>','<p>我是HTML字符串</p>','<p>我是HTML字符串</p>','<p>我是HTML字符串</p>','<p>我是HTML字符串</p>','<p>我是HTML字符串</p>','<p>我是HTML字符串</p>','<p>我是HTML字符串</p>','<p>我是HTML字符串</p>'].join('')
+            content: $('<div><code>我是jquery渲染出来的</code></div>')
         });
     }
     var fastRender = document.getElementById('fast-render');
@@ -341,27 +341,6 @@
             content: '<p>我是HTML字符串</p>'
         });
     }
-    function isEmpty(value) {
-        if (Object.prototype.toString.call(value).match(/^\[object\s(.*)\]$/)[1] === 'Array') {
-            if (value.length > 0) {
-                return false;
-            } else {
-                return true;
-            }
-        } else if (Object.prototype.toString.call(value).match(/^\[object\s(.*)\]$/)[1] === 'Object') {
-            for (var name in value) {
-                return false;
-            }
-            return true;
-        } else if (Object.prototype.toString.call(value).match(/^\[object\s(.*)\]$/)[1] === 'String') {
-            if (value.length > 0) {
-                return false;
-            } else {
-                return true;
-            }
-        }
-    }
-    
     function ques() {
         hlayer.prompt({
             title: '调查问卷示例',

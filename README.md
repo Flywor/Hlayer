@@ -1,10 +1,6 @@
-<p align="center">
-    <img src="./hlayer.png">
-</p>
-
 # Hlayer
 
-fork from [huruijin/Hlayer](https://github.com/huruji/Hlayer)
+forked from [huruijin/Hlayer](https://github.com/huruji/Hlayer)
 
 ## 导入
 
